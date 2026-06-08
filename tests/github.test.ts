@@ -14,6 +14,6 @@ test('Github login screen with getByLable', async({page})=>{
     await page.goto('https://github.com/login');
      await page.getByLabel("Username or email address").fill('test2@example.com');
      await page.getByLabel("Password").fill('testcom');
-     await page.getByRole('button', { name: 'Sign in',exact:true}).click();
+     await page.getByRole('button', { name: 'Sign in',exact:true}).click();// exact will help to click on first element if there are multiple instances 
 
 });
