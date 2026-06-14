@@ -22,7 +22,7 @@ test("types of ss", async({page}) =>{
     await page.screenshot({path: 'screenshots/fullPage.png', fullPage:true});// full page screenshot
     await page.screenshot({path: 'screenshots/jpg.png', type: 'jpeg', quality:80});// to capture jpeg format screenshots, 0-100 is the quality of image
     await page.screenshot({path: 'screenshots/clipped.png', clip: {x:0, y:0, height:600, width: 800}});// clipped screenshot
-    await page.screenshot({path:'screenshots/ommited.png', omitBackground:true}); // omitted background
+    // await page.screenshot({path:'screenshots/ommited.png', omitBackground:true}); // omitted background
 
 
 });
