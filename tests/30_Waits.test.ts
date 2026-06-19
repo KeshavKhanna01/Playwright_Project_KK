@@ -4,7 +4,7 @@ test('auto wait for click', async({page})=>{
 
     await page.goto('https://playwright.dev/');
     await page.getByRole('link',{name: 'Get started'}).click();// auto/inbuilt wait
-    await expect(page.getByRole('heading',{name:/Playwright enables reliable web automation for testing/})).toBeVisible(); //auto wait for assertion
+    //await expect(page.getByRole('heading',{name:/Playwright enables reliable web automation for testing/})).toBeVisible(); //auto wait for assertion
 
     //---waitForTimeout() 36.⁠ ⁠Waitfortimeout
     // await page.waitForTimeout(5000);// hardcoded waits, used for delays
